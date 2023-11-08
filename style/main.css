@@ -1,0 +1,200 @@
+@import "reset.css";
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 24rem;
+  margin: 5.1rem 1rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    max-width: 69.5rem;
+    margin-top: 6.5rem;
+  }
+}
+/*column 1 layout*/
+.heading-rate-wrapper {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .heading-rate-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.rate-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.7rem;
+}
+
+@media (min-width: 768px) {
+  .rate-wrapper {
+    margin-top: 0rem;
+  }
+}
+@media (min-width: 1440px) {
+  .rate-wrapper {
+    margin-top: 2rem;
+  }
+}
+.rate {
+  background-color: hsl(300, 24%, 96%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 8px;
+  padding: 0.8rem;
+  width: 20.5rem;
+}
+.rate div {
+  display: flex;
+  gap: 0.5rem;
+}
+.rate div img {
+  display: inline;
+}
+
+@media (min-width: 1024px) {
+  .rate {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0.8rem;
+    width: auto;
+  }
+  .rate2 {
+    margin-left: 3rem;
+  }
+  .rate3 {
+    margin-left: 6rem;
+  }
+}
+/*column 2 layout*/
+.feedback-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 3.1rem;
+}
+
+@media (min-width: 768px) {
+  .feedback-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+}
+.feedback {
+  background-color: hsl(300, 43%, 22%);
+  max-width: 20.5rem;
+  height: fit-content;
+  border-radius: 8px;
+  padding: 2.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+  .feedback {
+    max-width: 23rem;
+    padding: 2.2rem 2rem;
+    gap: 1.5rem;
+  }
+  .feedback2 {
+    margin-top: 1rem;
+  }
+  .feedback3 {
+    margin-top: 2rem;
+  }
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.avater {
+  width: 15%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/*text-formatting*/
+.heading-rate-wrapper {
+  color: hsl(300, 43%, 22%);
+}
+
+.heading-main-paragraph {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .heading-main-paragraph {
+    text-align: left;
+    display: block;
+  }
+}
+.heading-main-paragraph h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  max-width: 15rem;
+  line-height: 2rem;
+}
+.heading-main-paragraph p {
+  font-weight: 400;
+  font-size: 1.2em;
+  max-width: 20.6rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1440px) {
+  .heading-main-paragraph h1 {
+    font-size: 3.5em;
+    max-width: 21rem;
+    line-height: 3rem;
+  }
+  .heading-main-paragraph p {
+    min-width: 28rem;
+  }
+}
+
+.rate {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.feedback-wrapper {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1em;
+  line-height: 1.4rem;
+}
+
+.name-status {
+  font-size: 0.9em;
+}
+.name-status p {
+  color: hsl(333, 80%, 67%);
+}
+
+/*# sourceMappingURL=main.css.map */
