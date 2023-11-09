@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/Evereverk/Social-Proof-Section-.git]
+- Live Site URL: [https://social-proof-section-five-omega.vercel.app/]
 
 ## My process
 
