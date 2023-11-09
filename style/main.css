@@ -1,6 +1,5 @@
 @import "reset.css";
 body {
-  background-color: hsl(0, 0%, 100%);
   font-size: 15px;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
@@ -8,8 +7,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
 }
 
+@media (min-width: 768px) {
+  body {
+    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+    background-size: 41%, 75%;
+  }
+}
 section {
   display: flex;
   flex-direction: column;
@@ -190,11 +199,13 @@ section {
   line-height: 1.4rem;
 }
 
-.name-status {
-  font-size: 0.9em;
+.name-status .name {
+  font-weight: 700;
+  font-size: 1em;
 }
-.name-status p {
+.name-status .status {
   color: hsl(333, 80%, 67%);
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=main.css.map */
